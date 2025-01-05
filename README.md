@@ -125,6 +125,30 @@
 
 ---
 
+## 🎯 구현할 기능 목록
+
+### Application
+- 숫자 야구 게임 시작
+- `IllegalArgumentException` 이 발생한 경우
+	- `IllegalArgumentException` 을 발생시킨 후 애플리케이션 종료
+
+### Game
+- 게임 실행
+- 3자리 수 입력에 대한 결과 출력
+	- 스트라이크, 볼, 낫싱
+	- 3자리 수 모두 맞히면 게임 종료
+		- 게임 종료 이후 게임 재시작 여부 확인
+
+### Computer
+- 3자리 난수 생성
+	- 재시작된 게임의 경우 3자리 난수 재생성
+
+### Player
+- 3자리 숫자 및 게임 재시작 여부 입력
+	- 입력값 유효성 확인 및 예외 처리
+
+---
+
 ## 📝 License
 
 This project is [MIT](https://github.com/woowacourse/java-baseball-precourse/blob/master/LICENSE) licensed.
