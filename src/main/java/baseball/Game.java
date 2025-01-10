@@ -21,8 +21,10 @@ public class Game {
     public void start() {
         List<Integer> computerNumbers = computer.getRandomNumbers();
         while (true) {
+            System.out.print("숫자를 입력해주세요 : ");
             List<Integer> playerNumbers = player.getInputNumbers();
             if (compareNumbers(computerNumbers, playerNumbers)) {
+                System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
                 String replayInput = player.getReplayInput();
                 if (replayInput.equals("1")) {
                     computer.resetRandomNumbers();
