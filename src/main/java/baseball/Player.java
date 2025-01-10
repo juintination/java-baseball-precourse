@@ -42,15 +42,15 @@ public class Player {
         return inputNumbers;
     }
 
-    private void validateReplayInput(int replayInput) {
-        if (replayInput != 1 && replayInput != 2) {
+    private void validateReplayInput(String replayInput) {
+        if (!replayInput.equals("1") && !replayInput.equals("2")) {
             throw new IllegalArgumentException("1 또는 2를 입력해야 합니다. 게임 종료");
         }
     }
 
-    public int getReplayInput() {
+    public String getReplayInput() {
         System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
-        int replayInput = Integer.parseInt(Console.readLine());
+        String replayInput = Console.readLine();
         validateReplayInput(replayInput);
         return replayInput;
     }

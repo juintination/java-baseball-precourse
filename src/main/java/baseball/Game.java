@@ -23,11 +23,11 @@ public class Game {
         while (true) {
             List<Integer> playerNumbers = player.getInputNumbers();
             if (compareNumbers(computerNumbers, playerNumbers)) {
-                int replayInput = player.getReplayInput();
-                if (replayInput == 1) {
+                String replayInput = player.getReplayInput();
+                if (replayInput.equals("1")) {
                     computer.resetRandomNumbers();
                     computerNumbers = computer.getRandomNumbers();
-                } else {
+                } else if (replayInput.equals("2")) {
                     break;
                 }
             }
